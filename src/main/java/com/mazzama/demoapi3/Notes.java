@@ -21,8 +21,10 @@ public class Notes {
     private String text;
 
     @CreatedDate
+    @Column(name = "created_at")
     private Date createdAt;
 
     @LastModifiedDate
+    @Column(name = "updated_at")
     private Date updatedAt;
 }

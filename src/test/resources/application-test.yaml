@@ -20,11 +20,13 @@ spring:
         dialect: org.hibernate.dialect.H2Dialect
     generate-ddl: true
     hibernate:
-      ddl-auto: create-drop
-    show-sql: false
+      ddl-auto: none
+    show-sql: true
   sql:
     init:
       mode: always
+      schema-locations: classpath:schema.sql
+      data-locations: classpath:data.sql
 
 logging:
   level:
